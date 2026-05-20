@@ -307,7 +307,7 @@ def parse_text(raw_text: str) -> ParseResult:
         try:
             msg = parse_record(record_text, idx, start, end)
             messages.append(msg)
-        except Exception as exc:  # pragma: no cover
+        except (ValueError, IndexError, KeyError, AttributeError, TypeError) as exc:  # pragma: no cover
             messages.append(
                 MessageRecord(
                     message_id=f"msg-{idx:06d}",
