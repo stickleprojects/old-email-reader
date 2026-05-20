@@ -1,0 +1,55 @@
+From:CN=Alice Example/OU=Europe/O=DDS
+To:CN=Bob Sample/OU=Europe/O=DDS@DDS
+Subject:
+Body:
+
+***************************************************************************************************
+From:CN=Alice Example/OU=Europe/O=DDS
+To:bob@example.com, carol@example.com
+Subject:Re: Project update
+Body:
+Please see update.
+----- Forwarded by Alice Example/Europe/DDS on 27/11/2003 10:49 -----
+Bob Sample/Europe/DDS
+27/11/2003 09:30
+
+To
+Alice Example/Europe/DDS@DDS
+cc
+
+Subject
+Project update
+
+[attachment "plan.doc" deleted by Alice Example/Europe/DDS]
+***************************************************************************************************
+From:CN=Carol Example/OU=Europe/O=DDS
+To:bob@example.com
+Subject:Meeting notes
+Body:
+Donovan Data Systems Ltd
+Tel : ++44(0)20 7255 7232
+Fax : ++44(0)20 7255 7171
+http://www.dds.co.uk
+Main message body survives.
+***************************************************************************************************
+From:
+To:CN=Bob Sample/OU=Europe/O=DDS@DDS
+Subject:Fw: Timeline
+Body:
+Alice Example/Europe/DDS
+32/13/2003 99:99
+
+To
+Bob Sample/Europe/DDS@DDS
+cc
+
+Subject
+Timeline
+
+Bad date should remain ambiguous.
+***************************************************************************************************
+From:CN=Alice Example/OU=Europe/O=DDS
+To:CN=Bob Sample/OU=Europe/O=DDS@DDS
+Subject:Re: Project update
+Body:
+Follow-up with deterministic grouping.
