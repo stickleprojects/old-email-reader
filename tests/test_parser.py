@@ -49,8 +49,13 @@ class ParserTests(unittest.TestCase):
         self.assertIn("date_unparsed", invalid.warnings)
 
     def test_conversation_grouping_deterministic(self) -> None:
-        conv_ids = [c.conversation_id for c in self.result.conversations]
-        self.assertEqual(conv_ids, sorted(conv_ids, reverse=True))
+        convs = self.result.conversations
+        stable = sorted(
+            convs,
+            key=lambda c: ((c.last_at or "0000-00-00T00:00:00"), c.conversation_id),
+            reverse=True,
+        )
+        self.assertEqual(convs, stable)
 
 
 if __name__ == "__main__":
