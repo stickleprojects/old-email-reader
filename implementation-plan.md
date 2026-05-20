@@ -26,6 +26,7 @@
 ## Data Analysis Summary
 
 The sample appears to be a Lotus/Notes-exported archive with:
+
 - Top-level separators (asterisk lines)
 - Header wrappers that may contain embedded prior messages
 - Inline sender/date/To/cc/Subject structures
@@ -85,8 +86,9 @@ This should be handled by a staged parser pipeline, not a single regex pass.
    - Regression tests for deduplication and normalization behavior.
 
 10. **Add observability and fallback behavior**
-   - Emit parse report: records processed, parsed messages, skipped fragments, confidence distribution.
-   - Keep unparsed fragments as raw artifacts so no data is silently lost.
+
+- Emit parse report: records processed, parsed messages, skipped fragments, confidence distribution.
+- Keep unparsed fragments as raw artifacts so no data is silently lost.
 
 ## Delivery Phases
 
